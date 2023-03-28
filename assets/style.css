@@ -1,0 +1,67 @@
+
+body{
+    display:flex;
+    flex-direction:column;
+    flex:auto;
+    font-family:'Trebuchet MS', 'sans-serif';
+}
+
+header{
+    background-color:aqua;
+    padding:50px 0 50px 0;
+    width:100%;
+    color:rgb(0, 0, 0);
+    margin:0px   0 0 0;
+    text-align:center;
+}
+
+/* header h1{
+    border:solid black;
+
+} */
+
+#Questions{
+    text-align: center;
+    border:solid black;
+    height:200px;
+}
+
+#Answers{
+    margin-left:300px;
+    margin-right:300px;
+    
+}
+
+#Answers li:hover{
+    background-color:aqua;
+}
+
+#Answers li{
+    margin:2px;
+    padding:10px;
+    border: solid black;
+    text-align:center;
+    list-style-type:upper-alpha;
+    list-style-position:inside;
+    cursor:pointer;
+    
+
+}
+
+#Page-Nav{
+    
+}
+
+#Page-Nav button{
+    margin-top:50px;
+    padding:0px 40px 0px 40px;
+    cursor:pointer;
+    background-color:white;
+
+
+}
+
+#Page-Nav button:hover{
+    background-color:aqua;
+}
+
