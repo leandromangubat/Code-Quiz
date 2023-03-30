@@ -30,10 +30,10 @@ header h1{
 
 #questions{
     text-align: center;
-    border:solid black;
     display:flex;
     justify-content: center;
-    height: 250px;
+    height: 100px;
+    margin-top:20px;
 }
 
 #start{
