@@ -1,17 +1,17 @@
 var data = [
     {
-      question: 'What is A?',
-      options: ['option 1a', 'option 2a', 'option 3a', 'option 4a'],
+      question: 'Which one of the following is NOT not a programming language?',
+      options: ['A) Python', 'B) HTML', 'C) Android', 'D) JavaScript'],
       answer: 2,
     },
     {
-      question: 'What is B?',
-      options: ['option 1b', 'option 2a', 'option 3a', 'option 4a'],
+      question: 'Which of the following creates space inside a box model?',
+      options: ['A) Padding', 'B) Margin', 'C) Border', 'D) All of the above'],
       answer: 0,
     },
     {
-      question: 'What is C?',
-      options: ['option 1c', 'option 2a', 'option 3a', 'option 4a'],
+      question: 'What does API stand for?',
+      options: ['A) Automated Program Initiate', 'B) Application Programming Interface', 'C) Apple Pod Index', 'D) None of the above'],
       answer: 1,
     },
   ]
@@ -67,6 +67,7 @@ function startQuiz(){
     if (chosen == correctOption) {
       points += 10;
     }
+    //-10 sec penalty for wrong answer
     else{
         time -= 10;
     }
@@ -113,7 +114,8 @@ function quizEnd(){
     clearInterval(timer);
     //Asks user if they want to try again
     qEl.append(startBtn);
-    startBtn.textContent = "Try Again";
+    startBtn.textContent = "Click to try again";
+    //Presents user with their score displaying in the center of the page
     optionsEl.textContent ="Your Score: " + points;
     optionsEl.setAttribute('style', 'display: flex; justify-content: center;');
     nameInput.setAttribute('style', '');
@@ -137,12 +139,20 @@ function quizEnd(){
       initials: initials,
     };
 
+    
+
     // save to localstorage
     highscores.push(newScore);
     window.localStorage.setItem('highscores', JSON.stringify(highscores));
-
+    
+    var subButton = document.querySelector('#subButton');
+    subButton.addEventListener('click', logScore);
 };
 
+function logScore(){
+            
+            scoreBoard.textContent = highscores; 
+};
 
 //   var x= 5;
 //   var z =10;

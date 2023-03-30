@@ -28,16 +28,6 @@ header h1{
     color:black;
 }
 
-
-/* button{
-    color: black;
-} */
-
-/* header h1{
-    border:solid black;
-
-} */
-
 #questions{
     text-align: center;
     border:solid black;
@@ -62,8 +52,8 @@ header h1{
 }
 
 #options{
-    margin-left:300px;
-    margin-right:300px;
+    margin-left:500px;
+    margin-right:500px;
     border-radius: 20px;
     
 }
@@ -80,10 +70,20 @@ header h1{
     text-align:center;
     cursor:pointer;
     border-radius: 30px;
-    width:auto;
     background-color:var(--bg-color) ;
     height:auto;
+}
 
+#input-container{
+    color:black;
+}
+
+#subButton{
+    color:black;
+}
+
+#initials{
+    color:black;
 }
 
 #timerScore{
@@ -97,7 +97,6 @@ header h1{
     width:50px;
     text-align: center;
     width:200px;
-    border:solid black;
 
 
 }
