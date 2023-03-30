@@ -1,67 +1,111 @@
+*{
+    color:aliceblue;
+    transition: .5s;
+}
+
+:root{
+    --bg-color:rgb(11, 53, 84);
+}
 
 body{
-    display:flex;
     flex-direction:column;
-    flex:auto;
+    display:flex;
     font-family:'Trebuchet MS', 'sans-serif';
+    background-color:var(--bg-color);
+
 }
 
 header{
     background-color:aqua;
     padding:50px 0 50px 0;
     width:100%;
-    color:rgb(0, 0, 0);
     margin:0px   0 0 0;
     text-align:center;
+    
 }
+
+header h1{
+    color:black;
+}
+
+
+/* button{
+    color: black;
+} */
 
 /* header h1{
     border:solid black;
 
 } */
 
-#Questions{
+#questions{
     text-align: center;
     border:solid black;
-    height:200px;
+    display:flex;
+    justify-content: center;
+    height: 250px;
 }
 
-#Answers{
+#start{
+    background-color:var(--bg-color);
+    padding:10px 30px 10px 30px;
+    color:aliceblue;
+    cursor:pointer;
+    border-radius: 30px;
+    height:40px;
+}
+
+#start:hover{
+    background-color:aqua;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+}
+
+#options{
     margin-left:300px;
     margin-right:300px;
+    border-radius: 20px;
     
 }
 
-#Answers li:hover{
+#options div:hover{
     background-color:aqua;
+    color: black;
+    transition: .5s;
 }
 
-#Answers li{
+#options div{
     margin:2px;
-    padding:10px;
-    border: solid black;
+    padding:5px;
     text-align:center;
-    list-style-type:upper-alpha;
-    list-style-position:inside;
     cursor:pointer;
-    
+    border-radius: 30px;
+    width:auto;
+    background-color:var(--bg-color) ;
+    height:auto;
 
 }
 
-#Page-Nav{
-    
+#timerScore{
+    display:flex;
+    justify-content:space-between;
 }
 
-#Page-Nav button{
+#timerScore div{
     margin-top:50px;
-    padding:0px 40px 0px 40px;
-    cursor:pointer;
-    background-color:white;
+    background-color:var(--bg-color);
+    width:50px;
+    text-align: center;
+    width:200px;
+    border:solid black;
 
 
 }
 
-#Page-Nav button:hover{
-    background-color:aqua;
+.hide{
+    display:none;
 }
+
+
+
 
