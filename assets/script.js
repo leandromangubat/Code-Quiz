@@ -120,10 +120,6 @@ function quizEnd(){
     optionsEl.setAttribute('style', 'display: flex; justify-content: center;');
     nameInput.setAttribute('style', '');
 
-    // Hide question section
-
-    // create input element, also add a button element
-
     // on click of a button get input value, get a score, and save it to localStorage
     var initialsEl = document.getElementById("initials");
     var initials = initialsEl.value.trim(); 
